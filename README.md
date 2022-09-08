@@ -7,7 +7,11 @@ The application can be use to create a simple application with a tutur. It featu
 
 # Prerequisites
 MongoDB Atlas (Free)
+
 Python
+
 flask_pymongo
+
 Flask
+
 bcrypt
