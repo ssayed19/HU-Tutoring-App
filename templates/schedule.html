@@ -1,0 +1,43 @@
+    {% extends "layout.html" %}
+    {% block content %}
+		<body>
+	       <p>You are logged in as: {{ user }}</p>
+      </body>
+       <div class="login">
+    <div class="row">
+      <h2 style="text-align:center">Book your Appointment</h2>
+      <div class="vl">
+      </div>
+
+<form method=POST action="{{ url_for('schedule') }}">
+  <label for="fname">Full name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone"><br><br>
+  
+  <label for="dates">Date of appointment:</label>
+  <input type="date" id="dates" name="dates" min="2020-04-16"><br><br>
+  
+  <label for="times">Time of appointment:</label>
+  <input type="time" id="times" name="times"><br><br>
+   <!---->
+             <label>Stylist</label>
+             <select class="form-control" id = "emps" name = "emps" value = "emp">
+               <option value = "Siham">Siham</option>
+               <option value = "Sayed">Sayed</option>
+               <option value = "Sammy">Sammy</option>
+               <option value = "Ali">Ali</option>
+             </select>
+		  
+  
+  <input type="submit" value="Submit">
+</form>
+
+      </div>
+
+    </div>
+  </form>
+</div>
+
+     {% endblock %}

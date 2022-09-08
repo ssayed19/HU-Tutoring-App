@@ -1,0 +1,25 @@
+    {% extends "layout.html" %}
+    {% block content %}
+		<body>
+	       <p>You are logged in as: {{ user }}</p>
+      </body>
+       <div class="login">
+    <div class="row">
+      <h2 style="text-align:center">Your Appointment</h2>
+      <div class="vl">
+      </div>
+
+		<body>
+	       <p>Scheduled for: {{ name }}</p>
+		   <p>On the date of {{ date }} at {{ time }}</p>
+		   <p>With stylist: {{ emp }}</p>
+		   <p>Contact Info: {{ phone }}</p>
+      </body>
+       <!-- Need to update info? <a href="{{ url_for('schedule') }}">Click here</a>. -->
+      </div>
+
+    </div>
+  </form>
+</div>
+
+     {% endblock %}
