@@ -6,6 +6,7 @@ Created a tutoring scheduling web application as a proof of concept for CISC 225
 The application can be use to create a simple application with a tutur. It features a NoSQL database. 
 
 # Prerequisites
+MongoDB Atlas (Free)
 Python
 flask_pymongo
 Flask
