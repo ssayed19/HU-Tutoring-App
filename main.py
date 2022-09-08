@@ -4,8 +4,8 @@ import bcrypt
 
 app = Flask(__name__)
 
-app.config['MONGO_DBNAME'] = 'DB NAME GOES HERE'
-app.config['MONGO_URI'] = 'DB URI GOES HERE'
+app.config['MONGO_DBNAME'] = 'mongologinexample'
+app.config['MONGO_URI'] = 'mongodb://pretty:printed@ds021731.mlab.com:21731/mongologinexample'
 
 mongo = PyMongo(app)
 
